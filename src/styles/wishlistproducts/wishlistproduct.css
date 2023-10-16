@@ -1,0 +1,11 @@
+.basket__product[data-wishlist]{
+    /* border: 2px solid black; */
+    width: 50%;
+    margin: .5rem auto;
+}
+@media(max-width: 60em){
+    .basket__product[data-wishlist]{
+        width: 100%;
+        padding: 1rem;
+    }
+}

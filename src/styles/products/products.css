@@ -1,0 +1,147 @@
+
+.products__section__info{
+    padding: 3rem;
+    padding-top: 5rem;
+    text-align: center;
+}
+.products__section__info h2{
+    margin: 0;
+    
+    font-size: var(--fs-250);
+    font-weight: 400;
+}
+.products__section__categories a{
+    color: inherit;
+    text-decoration: none;
+    padding: 0 .5rem;
+    gap: 1rem;
+}
+/* PRODUCT */
+.products{
+    position: relative;
+    padding: 0 1rem;
+   
+}
+
+@media(max-width: 50em){
+    .products{
+        padding: 0;
+    }
+}
+
+/* CAROUSEL */
+
+.react-multiple-carousel__arrow{
+    border-radius: 0px !important;
+    background: rgba(0, 0, 0, .75) !important;
+}
+.react-multiple-carousel__arrow--left{
+    left: 0 !important;
+}
+.react-multiple-carousel__arrow--right{
+    right: 0 !important;
+}
+.react-multiple-carousel__arrow::before{
+    font-size: 2rem !important;
+}
+
+/* CARD ITEM */
+.product__item{
+    /* border: 2px solid black; */
+    height: 100%;
+    padding: 1rem;
+
+}
+.product__item__wrapper{
+    position: relative;
+    /* border: 2px solid orange; */
+}
+.product__item__wrapper button[data-wishlist]{
+    background-color: transparent;
+    position: absolute;
+    right: 0;
+    border: none;    
+}
+.product__item__wrapper button[data-wishlist] svg{
+    transition: .2s all ease;
+    cursor: pointer;
+}
+.product__item__wrapper button[data-wishlist] svg:hover{
+    fill: red;
+    animation: heart-scaling .5s ease infinite;
+}
+
+
+@keyframes heart-scaling {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.1);
+    }
+    to{
+        transform: scale(0.9);
+    }
+}
+
+
+.product__item__wrapper{
+    /* border: 2px solid red; */
+
+}
+
+
+
+.product__item .product__item__description{
+    padding: .75rem 0;
+    /* border: 2px solid green; */
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product__item .product__item__description 
+p,
+h3
+{
+    font-size: 1rem;
+    margin: .25rem 0;
+}
+.product__item button[data-basket]{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background-color: black;
+    border: none;
+    outline: none;
+}
+.product__item button[data-basket] svg{
+    fill: white;
+}
+.product__item button p{
+    margin: 0;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+@media(max-width: 50em){
+    .product__item{
+        padding: .5rem;
+    }
+    .products__section__info{
+        padding: 1rem;
+        padding-top: 5rem;
+    }
+    .products__section__info h2{
+        font-size: 2.25rem;
+    }
+    .product__item__description h3{
+        font-size: 12px;
+    }
+    .product__item button[data-basket] p{
+        font-size: 12px;
+    }
+}

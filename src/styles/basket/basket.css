@@ -1,0 +1,114 @@
+.basket{
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+}
+.left__section{
+    width: 600px;
+}
+.basket__product__info{
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+}
+.basket__product{
+    display: flex;
+    /* border: 2px solid black; */
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    /* max-height: 216px; */
+    margin: .5rem 0;
+}
+.basket__product img{
+    max-width: 216px;
+    max-height: 100%;
+    object-fit: cover;
+}
+.basket__product p,h3{
+    margin: 0;
+}
+.product__actions__wrapper{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+}
+.action__buttons{
+    padding: 0;
+    display: flex;
+    gap: .5rem;
+}
+.action__buttons button{
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.product__actions__wrapper h3{
+    font-size: 1.5rem;
+}
+.select__quantity{
+    display: flex;
+    width: 20%;
+    justify-content: right;
+}
+.select__quantity input{
+    border: none;
+    outline: none;
+    pointer-events: none;
+    max-width: 25px;
+    font-size: 2rem;
+}
+
+.quantity__buttons{
+    display: flex;
+    flex-direction: column;
+}
+.quantity__buttons button{
+    height: 50%;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    display: none;
+}
+@media(max-width: 60em){
+    .basket{
+        flex-direction: column;
+    }
+    .basket__product{
+        flex-direction: column;
+    }
+    .basket__product img{
+        max-width: 400px;
+        object-fit: cover;
+    }
+    .left__section{
+        width: 100%;
+    }
+    .product__name h3{
+        font-size: 16px;
+    }
+    .product__name p{
+        font-size: 12px;
+    }
+    .product__info p {
+        font-size: 12px;
+    }
+    .action__buttons button span{
+        display: none;
+    }
+    .select__quantity input{
+        font-size: 2rem;
+    }
+    .action__buttons{
+        gap: 0;
+    }
+}

@@ -1,0 +1,75 @@
+.newsletter__section{
+    padding: 0 40px;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    background: #f2f2f2;
+    height: 250px;
+}
+.newsletter__section__info{
+    max-width: 30%;
+}
+.newsletter__section h3{
+    font-size: var(--fs-150);
+}
+.newsletter__section p{
+    max-width: 75%;
+}
+.newsletter__section ul{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    align-items: center;
+}
+
+.newsletter__section ul::after{
+    content: "";
+    width: 165px;
+    height: 212px;
+    display: block;
+    background: url('https://selectshop.pl/modpub/_ss/_layout/imgs/newsletter-bg@2x.png') no-repeat;
+    background-size: contain;
+    /* margin-top: -185px; */
+}
+.newsletter__section li{
+    color: RGB(220, 1, 1);
+}
+.newsletter__section form{
+    width: 100%;
+    margin-left: 5rem;
+    /* display: flex; */
+    align-items: center;
+    border: 2px solid red;
+}
+.input__section{
+    display: flex;
+}
+
+.newsletter__section form input{
+    border: 2px solid blue;
+    width: 75%;
+}
+.newsletter__section form button{
+   width: 25%;
+}
+.newsletter__section form input, button{
+    padding: 1rem;
+}
+.newsletter__section form::before{
+    font-family: "iconmoon" !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: '\e906';
+    float: left;
+    margin: 30px 20px 0 0;
+    font-size: 0.8em;
+}
+@media(max-width: 50em){
+    
+}

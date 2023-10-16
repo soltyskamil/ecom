@@ -1,0 +1,39 @@
+.subtotal__info{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+.subtotal button{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    outline: none;
+}
+.subtotal button svg{
+    fill: white;
+    margin-right: 1rem;
+}
+.subtotal__no__items{
+    text-align: center;
+}
+.subtotal__info span{
+    font-weight: bold;
+    font-size: 2rem;
+}
+@media(max-width: 50em){
+    .subtotal__info{
+        padding: 1rem 0;
+    }
+    .subtotal__info p{
+        text-align: right;
+        font-size: 14px !important;
+    }
+}

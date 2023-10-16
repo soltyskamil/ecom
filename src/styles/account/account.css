@@ -1,0 +1,81 @@
+.account{
+    /* border: 2px solid red; */
+    height: 81vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.account__wrapper{
+    /* border: 2px solid blue; */
+    flex: 1;
+    height: 80%;
+    text-align: center;
+}
+.account__wrapper h3{
+    font-size: var(--fs-250);
+    font-weight: 300;
+    margin: .5rem;
+}
+
+.account__wrapper form input{
+    display: block;
+    width: 80%;
+    margin: .5rem auto;
+    padding: 1.5rem;
+    font-size: 1.25rem;
+    /* border: 2px solid black; */
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+.form__buttons{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.form__buttons button{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    background-color: black;
+    border: none;
+    color: white;
+    font-size: 1.25rem;
+}
+.form__buttons button svg{
+    fill: white;
+}
+.form__buttons[data-sign] button{
+    margin-left: auto;
+}
+@media(max-width: 50em){
+    .account{
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .account_form h3{
+        margin: 0;
+        font-size: var(--fs-175);
+        text-align: left;
+    }
+    .account__wrapper{
+        padding: 1rem;
+    }
+    .account__wrapper form input{
+        font-size: 1rem;
+        padding: .5rem;
+        width: 100%;
+    }
+    .form__buttons{
+        flex-direction: column;
+        gap: .5rem;
+        width: 100%;
+    }
+    .form__buttons button{
+        width: 100%;
+    }
+}
